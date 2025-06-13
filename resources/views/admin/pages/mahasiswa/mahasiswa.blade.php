@@ -15,7 +15,6 @@
                     <th>No</th>
                     <th>Nama Mahasiswa</th>
                     <th>NIM</th>
-                    <th>Kelas</th>
                     <th class="text-center">Action</th>
                 </tr>
             </thead>
@@ -25,7 +24,6 @@
                         <td>{{ $loop->iteration }}</td>
                         <td>{{ $item->namamhs }}</td>
                         <td>{{ $item->nim }}</td>
-                        <td>{{ $item->kelas }}</td>
                         <td class="text-center">
                             <div class="btn-group" role="group">
                                 <a href="/admin/mahasiswa/detail/{{ $item->id }}" class="btn btn-primary">

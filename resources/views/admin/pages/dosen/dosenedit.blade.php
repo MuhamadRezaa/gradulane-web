@@ -213,16 +213,17 @@
 
                 <div class="mb-3">
                     <label for="foto" class="form-label">Foto</label>
-                    @if ($dosen->foto)
+                    @if (!empty($dosen->foto) && $dosen->foto !== '-')
                         <div class="mb-2">
                             <img src="{{ asset('storage/' . $dosen->foto) }}" alt="Foto dosen" class="img-thumbnail"
                                 style="width: 300px; height: auto;">
                         </div>
                     @else
                         <div class="mb-2">
-                            <span>Tidak Ada Gambar</span>
+                            <span>Belum Ada Foto</span>
                         </div>
                     @endif
+
                     <input type="file" class="form-control" id="foto" name="foto"
                         accept=".jpg, .jpeg, .png">
                     <small class="text-muted">Biarkan kosong jika tidak ingin mengubah foto</small>

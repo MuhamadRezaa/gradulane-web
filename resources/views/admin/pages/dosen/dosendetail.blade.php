@@ -23,7 +23,7 @@
             <div class="col-md-3 text-center">
                 <div class="mb-3">
                     @if ($dosen->foto == '-')
-                        <img src="{{ asset('storage/images/defaultfoto.png') }}?{{ time() }}" alt="Foto Mahasiswa"
+                        <img src="{{ asset('images/defaultfoto.png') }}?{{ time() }}" alt="Foto Dosen"
                             class="img-fluid rounded" style="max-width: 300px; height: auto;">
                     @else
                         <img src="{{ asset('storage/' . $dosen->foto) }}?{{ time() }}" alt="Foto Dosen"
